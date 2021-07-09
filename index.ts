@@ -1,7 +1,5 @@
 import { parse } from '@babel/parser';
 import traverse, { NodePath } from '@babel/traverse';
-import { CheckPlugin } from '../type';
-import { generateFilePath } from '../utils';
 
 const checkMap = {
   ArrowFunctionExpression: '箭头函数',
