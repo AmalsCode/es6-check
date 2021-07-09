@@ -1,0 +1,37 @@
+{
+  "name": "es6-checker",
+  "version": "0.0.1",
+  "description": "js file es6 checker",
+  "keywords": [
+    "cli",
+    "es6",
+    "es6-check",
+    "ESMAScript-2015 check"
+  ],
+  "author": "55utah",
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "rm -rf ./dist && rm -rf ./types && tsc",
+    "start": "rm -rf ./dist && rm -rf ./types && tsc -w",
+    "prepublishOnly": "yarn build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "typescript": "^3.9.7",
+    "@babel/parser": "^7.14.7",
+    "@babel/traverse": "^7.14.7",
+    "@babel/types": "^7.14.5",
+  },
+  "devDependencies": {
+    "@types/babel__traverse": "^7.14.0"
+  }
+}
